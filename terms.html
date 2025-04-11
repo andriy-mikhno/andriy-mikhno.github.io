@@ -14,9 +14,12 @@
     }
     header {
       background-color: #1f2024;
-      color: #fff;
       padding: 20px;
       text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      color: #fff;
     }
     nav {
       background-color: #292b2e;
@@ -37,15 +40,20 @@
       max-width: 900px;
       margin: 0 auto;
     }
-    footer {
-      background-color: #1f2024;
-      color: #ccc;
+    .document-title {
       text-align: center;
-      padding: 10px;
-      font-size: 14px;
-      margin-top: 30px;
+      margin-bottom: 10px;
     }
-    /* Стили для содержимого страницы Terms */
+    .document-title h2 {
+      font-size: 26px;
+      color: #1f2024;
+      margin: 0;
+    }
+    .date {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
     .content-section {
       background: #fff;
       padding: 20px;
@@ -53,7 +61,7 @@
       border-radius: 8px;
       box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
-    .content-section h2 {
+    .content-section h3 {
       color: #1f2024;
       border-bottom: 2px solid #1f2024;
       padding-bottom: 5px;
@@ -67,10 +75,13 @@
       margin-bottom: 10px;
       line-height: 1.5;
     }
-    .date {
+    footer {
+      background-color: #1f2024;
+      color: #ccc;
       text-align: center;
-      font-weight: bold;
-      margin-bottom: 20px;
+      padding: 10px;
+      font-size: 14px;
+      margin-top: 30px;
     }
   </style>
 </head>
@@ -86,10 +97,13 @@
     <a href="downloads.html">Downloads</a>
   </nav>
   <main>
+    <div class="document-title">
+      <h2>Terms of Service</h2>
+    </div>
     <div class="date">Last Updated: 10.04.2025</div>
     
     <div class="content-section">
-      <h2>1. General Provisions</h2>
+      <h3>1. General Provisions</h3>
       <ol>
         <li><strong>1.1</strong> These Terms of Service ("Terms") govern your access to and use of the software product "AI Video Search" (the "Application") and any related services (the "Services"). By using the Application, you agree to be bound by these Terms. If you do not agree, please do not use the Application.</li>
         <li><strong>1.2</strong> The Application is provided by an individual entrepreneur (FOP) registered in Ukraine. The Application is offered under the name "AI Video Search," which has not been formally trademarked.</li>
@@ -97,7 +111,7 @@
     </div>
 
     <div class="content-section">
-      <h2>2. Description of the Product</h2>
+      <h3>2. Description of the Product</h3>
       <ol>
         <li><strong>2.1</strong> <em>Product Name:</em> AI Video Search</li>
         <li><strong>2.2</strong> <em>Functionality:</em> The Application is designed to search for editing scenes in video files based on a text query.</li>
@@ -106,7 +120,7 @@
     </div>
 
     <div class="content-section">
-      <h2>3. Target Audience and Purpose</h2>
+      <h3>3. Target Audience and Purpose</h3>
       <ol>
         <li><strong>3.1</strong> The Application is intended for professional video editors, video engineers, and possibly media holding companies.</li>
         <li><strong>3.2</strong> The Application addresses the problem of lengthy manual searches for the desired video segments in raw footage.</li>
@@ -114,7 +128,7 @@
     </div>
 
     <div class="content-section">
-      <h2>4. Licensing and Payment</h2>
+      <h3>4. Licensing and Payment</h3>
       <ol>
         <li><strong>4.1</strong> The Application is offered as a subscription service.</li>
         <li><strong>4.2</strong> For the MVP phase, the subscription price is set at USD 2.99 per month (comparable to the price of a good cup of coffee).</li>
@@ -124,7 +138,7 @@
     </div>
 
     <div class="content-section">
-      <h2>5. Intellectual Property</h2>
+      <h3>5. Intellectual Property</h3>
       <ol>
         <li><strong>5.1</strong> All rights, title, and interest in the Application, including any related documentation, software, and design, remain the exclusive property of the individual entrepreneur or their licensors.</li>
         <li><strong>5.2</strong> You are granted a limited, non-exclusive, non-transferable license to use the Application in accordance with these Terms. You may not copy, modify, distribute, or create derivative works without prior written consent.</li>
@@ -132,7 +146,7 @@
     </div>
 
     <div class="content-section">
-      <h2>6. Data Collection, Use, and Storage</h2>
+      <h3>6. Data Collection, Use, and Storage</h3>
       <ol>
         <li><strong>6.1</strong> The Application operates locally on your device. All user inputs (such as search queries and video file selections) and processing results are stored locally (e.g., in an SQLite database and JSON backup files) and are not transmitted to external servers.</li>
         <li><strong>6.2</strong> Users are responsible for maintaining the security of their data and their device.</li>
@@ -140,7 +154,7 @@
     </div>
 
     <div class="content-section">
-      <h2>7. Limitation of Liability</h2>
+      <h3>7. Limitation of Liability</h3>
       <ol>
         <li><strong>7.1</strong> The Application is provided "as is" and "as available." The individual entrepreneur makes no warranties regarding uninterrupted operation, accuracy, or fitness for a particular purpose.</li>
         <li><strong>7.2</strong> To the maximum extent permitted by law, the provider shall not be liable for any direct, indirect, incidental, consequential, or punitive damages arising from the use, or inability to use, the Application.</li>
@@ -148,7 +162,7 @@
     </div>
 
     <div class="content-section">
-      <h2>8. Termination</h2>
+      <h3>8. Termination</h3>
       <ol>
         <li><strong>8.1</strong> The provider reserves the right to suspend or terminate access to the Application for users found to be in violation of these Terms.</li>
         <li><strong>8.2</strong> Users may discontinue the use of the Application at any time; however, any paid subscription periods are non-refundable (unless mandated otherwise by Paddle’s policies).</li>
@@ -156,7 +170,7 @@
     </div>
 
     <div class="content-section">
-      <h2>9. Changes to the Terms</h2>
+      <h3>9. Changes to the Terms</h3>
       <ol>
         <li><strong>9.1</strong> The provider reserves the right to modify these Terms at any time. Changes will be posted on the Application’s website and become effective immediately upon publication.</li>
         <li><strong>9.2</strong> Continued use of the Application following such modifications constitutes acceptance of the new Terms.</li>
@@ -164,7 +178,7 @@
     </div>
 
     <div class="content-section">
-      <h2>10. Governing Law and Dispute Resolution</h2>
+      <h3>10. Governing Law and Dispute Resolution</h3>
       <ol>
         <li><strong>10.1</strong> These Terms are governed by the laws of Ukraine. Any disputes arising from the use of the Application shall be resolved in accordance with Ukrainian law.</li>
         <li><strong>10.2</strong> If any provision of these Terms is found to be invalid or unenforceable, the remaining provisions will continue in full force and effect.</li>
